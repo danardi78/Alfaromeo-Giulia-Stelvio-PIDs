@@ -16,4 +16,4 @@ I notice that in my car (that is a MY2016, so in other versions it may be differ
 So my suggestion is to arrange sensors in dashboard pages so that all DA10F1 snsor are together and separathe from others.
 
 # Disclaimer
-No affiliate link here, all the sources are only to help you. Chose what you prefear.
+No affiliate link here, all the sources are only to help you. Choose what you prefear.
