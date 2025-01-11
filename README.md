@@ -6,7 +6,7 @@ Some parameters are found around most famous alfa forums (mainly https://www.giu
 
 Here you can find a simple sheet with the list, and a direct impport file for CarScanner app (the one I usually use).
 
-# my Carscanner setup
+# my CarScanner setup
 I use Carscanner for iphone https://apps.apple.com/it/app/car-scanner-elm-obd2/id1259933623 that have a nice hmi and a good customization. On lastet version the developer had added many of my sensors by default, so for standard use probably you don't need any more. But if you want to use custom sensor you need to buy the pro version (I found that the for life version is the best).
 To connect to my car I use a iCarPro in bt4.0 version. It work nice, and it's compact.
 You don't need any more thing.
