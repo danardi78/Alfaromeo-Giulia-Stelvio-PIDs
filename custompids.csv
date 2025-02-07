@@ -116,3 +116,6 @@ Battery Current IBS (DA40F1);Battery;DA40F1;221005;(((L*256)+M)-(256*128))/100;A
 Battery Voltage IBS (DA40F1);Battery ?;DA40F1;221005;((J*256)+K)/800;V;15.0;12.0
 Battery Temperature IBS (DA40F1);Battery;DA40F1;221005;G-40;°C;100.0;-40.0
 SoC IBS (DA40F1);Battery SoC;DA40F1;221005;B;%;95.0;65.0
+Key Ignition Position;Key Ignition Position;DA40F1;220131;A;;14.0;0.0
+Oil pressure (BACCABLE);Oil press;DABAF1;2200000004B2;((((B*256*0)+C)@&510)@>>1)/10;;6.0;1.0
+Oil temperature (BACCABLE);Oil temp;DABAF1;2202000004B2;((((B*256)+C)@&16320)@>>6)-40;;120.0;70.0
