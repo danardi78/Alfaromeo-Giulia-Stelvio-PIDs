@@ -23,10 +23,17 @@ The columns of the sheet are:
 2. Short description: it's the label attached on sensors on dashboard of the app, you probably don't need about this
 3. Header: in short words it select the ecu you want to use for the request. The app have to send it before the command ID
 4. Command ID (PID): it's the code of the parameter you are requesting
-5. Formula: this is a very important part, because it tell how to manage the data you receive. A, B, C, ...etc, represents each byte of the answer, and the formula define how to pull out the value of the sensor
+5. Formula: this is a very important part, because it tell how to manage the data you receive. A, B, C, ...etc, represents each byte of the answer, and the formula define how to pull out the value of the sensor. Note that all the formulas you find here are compatible with CarScanner syntax.
 6. Measure unit: any questione here? ;)
 7. Max value: it's not the maximum value you can expect, but in the way I've used it on the app it's the max value of the gauge you'll see on the screen. So bigger values can be displayed (as value) but the gauge will stay at the top. The meaning of this use is to see the gauge in the range you expect to see the sensor, and higher value may be the symptom of a problem
 8. Min value: as for the max value but in the opposite way :)
+
+## BACCABLE interaction
+Some interesting datas are available only on direct can access.<br>
+To overtake this limitation of ELM32, I use BACCABLE project of my dear friend gaucho<br>
+https://github.com/gaucho1978/BACCAble<br>
+He has defined a special unused header "DABAF1" as the address for his board (a cheap canable you can easly find), and with special string construction we can now find unaccessible datas through BACCABLE.<br>
+You find those "sensor" as "BACCABLE" in long description.<br>
 
 # advice
 Those parameters are tested on my diesel version of Giulia, so maybe that some of that are not applicable and not working on 2.0L and 2.9L. In the other hand some parameter found on forums are for petrol version and not working on mine, so they are not tested from me.
