@@ -35,6 +35,9 @@ https://github.com/gaucho1978/BACCAble<br>
 He has defined a special unused header "DABAF1" as the address for his board (a cheap canable you can easly find), and with special string construction we can now find unaccessible datas through BACCABLE.<br>
 You find those "sensor" as "BACCABLE" in long description.<br>
 
+### ATTENTION!!
+If you have a baccable installed with immobilizer function actived, don't use tire's pids that have header DAC7F1: it will engadge the immobilizer and will stop the car!!!
+
 # advice
 Those parameters are tested on my diesel version of Giulia, so maybe that some of that are not applicable and not working on 2.0L and 2.9L. In the other hand some parameter found on forums are for petrol version and not working on mine, so they are not tested from me.
 
