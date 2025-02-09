@@ -6,7 +6,7 @@ Some parameters are found around most famous alfa forums (mainly https://www.giu
 
 Here you can find a simple sheet with the list, and a direct import file for CarScanner app (the one I usually use).
 <p align="center">
-  <img src="./img/IMG_0430.PNG" alt="Dashboard example" width="200"/>
+  <img src="./img/dashboard-2.gif" alt="Dashboard example" width="200"/>
 </p>
 
 # file description
