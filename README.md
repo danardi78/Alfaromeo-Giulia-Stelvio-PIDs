@@ -28,6 +28,12 @@ The columns of the sheet are:
 7. Max value: it's not the maximum value you can expect, but in the way I've used it on the app it's the max value of the gauge you'll see on the screen. So bigger values can be displayed (as value) but the gauge will stay at the top. The meaning of this use is to see the gauge in the range you expect to see the sensor, and higher value may be the symptom of a problem
 8. Min value: as for the max value but in the opposite way :)
 
+### dashboard.json
+Just for help your first approch, that's my dashboard. Unsure about the easy functionality by import, because the identifier of the sensor to be used in the gauge is an ID that can change from a device to other.
+
+### backup.cbz
+That's my full app backup. This overwrite all your settings, dashboard and sensor, so make sure to make your backup first.
+
 ## BACCABLE interaction
 Some interesting datas are available only on direct can access.<br>
 To overtake this limitation of ELM32, I use BACCABLE project of my dear friend gaucho<br>
