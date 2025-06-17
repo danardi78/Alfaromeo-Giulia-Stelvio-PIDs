@@ -1,138 +1,140 @@
-﻿Long description;Short description;Header;Command ID (PID);Formula;Measure unit;Max value;Min value;Measure unit
-DPF clogging (DA10F1);DPF;DA10F1;2218E4;((A*256)+B)*1000/65535;UN:14;100.0;0.0;%
-Battery IBS (DA10F1);Battery;DA10F1;2219BD;A;UN:14;100.0;0.0;%
-Oil quality degrade (DA10F1);Oil quality;DA10F1;223813;((A*256)+B)*100/65535;UN:14;100.0;0.0;%
-Air temp (turbo) (DA10F1);Turbo;DA10F1;221935;(((A*256)+B)*0.02)-40;UN:15;60.0;20.0;°C
-Engine oil temperature (benz) (DA10F1);Oil;DA10F1;221302;B;UN:15;200.0;-40.0;°C
-Intake manifold temperature IMT (before the intercooler) (DA10F1);Intercooler;DA10F1;223A58;A-40;UN:15;200.0;-40.0;°C
-Intake air temperature IAT (after the intercooler) (DA10F1);Intake air;DA10F1;221935;A-40;UN:15;200.0;-40.0;°C
-Torque(from TCM) (DA18F1);Torque;DA18F1;221018;((A*256+B)-500);UN:13;500.0;0.0;Nm
-Gearbox oil temperature;AT8;DA18F1;2204FE;A-40;UN:15;120.0;50.0;°C
-Engine oil level (benz) (DA10F1);Oil;DA10F1;223A41;(A*256+B)/1000;UN:24;5.0;0.0;L
-Current engaged gear (DA10F1);AT8;DA10F1;22192D;A;UN:0;8.0;0.0; 
-Boost pressure (DA10F1);Turbo;DA10F1;22195A;((A*256+B)-32768)/1000-1;UN:48;2.0;0.0;bar
-DPF temperature (DA10F1);DPF;DA10F1;2218DE;(((A*256)+B)*0.02)-40;UN:15;700.0;400.0;°C
-DPF regeneration process (DA10F1);Regen.;DA10F1;22380B;((A*256)+B)*(100/65535);UN:14;100.0;0.0;%
-Distance covered from last DPF regeneration (DA10F1);DPF;DA10F1;223807;((A*65536)+(B*256)+C)*0.1;UN:3;300.0;0.0;km
-Total DPF regenerations (DA10F1);Regen.;DA10F1;2218A4;(A*256)+B;UN:0;65000.0;0.0; 
-Engine coolant temperature (DA10F1);H2O trmp;DA10F1;221003;(((A*256)+B)*0.02)-40;UN:15;120.0;70.0;°C
-DNA selector (DA10F1);DNA;DA10F1;2218F0;A;UN:0;6.0;0.0; 
-Battery voltage (DB33F1);Battery;DB33F1;0142;((A*256)+B)/1000;UN:10;15.0;12.0;V
-Engine RPM (DB33F1);;DB33F1;010C;(((256*A)+B)/4);UN:6;6000.0;0.0;rpm
-Tire temperature front left (DAC7F1);🛞 F-L;DAC7F1;2240B1;E-50;UN:15;200.0;-50.0;°C
-Tire temperature front right (DAC7F1);🛞 F-R;DAC7F1;2240B2;E-50;UN:15;200.0;-50.0;°C
-Tire temperature rear left (DAC7F1);🛞 R-L;DAC7F1;2240B3;E-50;UN:15;200.0;-50.0;°C
-Tire temperature rear right (DAC7F1);🛞 R-R;DAC7F1;2240B4;E-50;UN:15;200.0;-50.0;°C
-Engine oil pressure (benz) (DA10F1);Oil;DA10F1;22130A;A*10/255;UN:48;10.0;0.0;bar
-Vehicle Speed (DB33F1);Speed;DB33F1;010D;A;UN:1;250.0;0.0;km/h
-Fuel Pressure (DB33F1);Diesel;DB33F1;0123;((A*256)+B)*10;UN:5;180000.0;0.0;kPa
-Commanded EGR (DB33F1);EGR;DB33F1;012C;A*100/255;UN:14;100.0;0.0;%
-Number of warm-ups since codes cleared (DB33F1);Warmup without DTC;DB33F1;0130;A;UN:0;256.0;0.0; 
-Distance since codes cleared (DB33F1);DTC cleared;DB33F1;0131;(A*256)+B;UN:0;65530.0;0.0; 
-Turbocharger temperature (DB33F1);Turbo;DB33F1;0175;(((F*256)+G)/10)-40;UN:15;800.0;200.0;°C
-Battery voltage (DA10F1);Battery;DA10F1;221955;((A*256)+B)*(0.5/1000);UN:10;15.0;12.0;V
-Calculated horsepower (DA18F1);Power;DA18F1;221018;((A*256+B)-500)* {Giri motore} /9549*1.36;UN:45;200.0;0.0;hp
-DNA (DA18F1);DNA;DA18F1;220518;A;UN:0;100.0;0.0; 
-DNA (DA18F1);DNA;DA18F1;220540;C;UN:0;100.0;0.0; 
-Motor rpm (DA10F1);Motor rev;DA10F1;221000;((A*256)+B)/4;UN:6;5000.0;0.0;rpm
-Speed (DA10F1);Speed;DA10F1;221002;((A*256)+B)/124;UN:1;260.0;0.0;km/h
-Time from start;T-ON;DA10F1;221009;((A*256)+B)/4;UN:18;655354.0;0.0;min
-EGR commanded (DA10F1);EGR;DA10F1;22189B;(((A*256)+B)-32767)*100/32767;UN:14;60.0;0.0;%
-EGR measured (DA10F1);EGR;DA10F1;22189C;(((A*256)+B)-32767)*100/32767;UN:14;60.0;0.0;%
-Total DPF regenerations (DA10F1);Regen.;DA10F1;2218A4;(A*256)+B;UN:0;65000.0;0.0; 
-Particolate (DA10F1);Particolate;DA10F1;2218AA;((A*256)+B);UN:42;400.0;0.0;g
-Throttle 1 (DA10F1);Throttle;DA10F1;221924;((A*256)+B)/655.35;UN:14;100.0;0.0;%
-Throttle 2 (DA10F1);Throttle;DA10F1;221925;((A*256)+B)/655.35;UN:14;100.0;0.0;%
-Cruiser control (DA10F1);Cruiser ;DA10F1;22192A;(A*256)+B;UN:0;17.0;0.0; 
-Boost pressure required (DA10F1);Turbo req.;DA10F1;221942;((A*256+B)/32768);UN:48;2.0;0.0;bar
-Cruiser control (DA10F1);Cruiser ;DA10F1;221961;(A*256)+B;UN:0;2.0;1.0; 
-Distance from DPF replacement (DA10F1);DPF total distance;DA10F1;223806;((A*256)+B)*10;UN:3;655350.0;0.0;km
-DPF regeneration mean distance (DA10F1);Reg. interv;DA10F1;223809;(A*256)+B;UN:3;400.0;0.0;km
-DPF regeneration mean time (DA10F1);Reg. time;DA10F1;22380A;((A*256)+B)/60;UN:18;10.0;0.0;min
-Cruiser control regulation (DA10F1);Cruiser;DA10F1;223975;(A*256)+B;UN:0;2048.0;0.0; 
-Diesel rail (DA10F1);Rail;DA10F1;221904;((A*256)+B);UN:5;65535.0;0.0;kPa
-Throttle 3 (DA10F1);Throttle ;DA10F1;221926;((A*256)+B)*100/24576;UN:14;85.0;20.0;%
-Odometer (DA10F1);Odometer;DA10F1;223814;((((((A*256)+B)*256)+C)*256)+D)/1000;UN:3;500000.0;0.0;km
-? Time style (DA10F1);Time;DA10F1;223888;(((((((L*256)+ M*256)+N)*256)+O)*256)+P)/100/60;UN:18;30.0;0.0;min
-Turbo position req (DA10F1);Turbo pos;DA10F1;22189F;((A*256)+B)/655.35;UN:14;100.0;0.0;%
-Turbo position measured (DA10F1);Turbo pos;DA10F1;2218A0;((A*256)+B)/655.35;UN:14;100.0;0.0;%
-Injection advance (pilot) (DA10F1);Advance pilot;DA10F1;2218C1;((A*256)+B)*16/1000;UN:7;20.0;0.0;°
-Injection advance (pre) (DA10F1);Advance pre;DA10F1;2218C2;((A*256)+B)*16/1000;UN:7;20.0;0.0;°
-Injection advance (after) (DA10F1);Advance after;DA10F1;2218C4;((A*256)+B)*16/1000;UN:7;20.0;0.0;°
-Injection advance (post) (DA10F1);Advance post;DA10F1;2218C5;((A*256)+B)*16/1000;UN:7;20.0;0.0;°
-Injection advance (main) (DA10F1);Advance main;DA10F1;2218C6;((A*256)+B)*16/1000;UN:7;20.0;0.0;°
-Fuel inject (pilot) (DA10F1);Fuel pilot;DA10F1;2218C9;((A*256)+B)/327.67;UN:72;3.0;0.0;mm^3/str
-Fuel inject (pre) (DA10F1);Fuel pre;DA10F1;2218CA;((A*256)+B)/327.67;UN:72;100.0;0.0;mm^3/str
-Fiel inject (after) (DA10F1);Fuel after;DA10F1;2218CC;((A*256)+B)/327.67;UN:72;100.0;0.0;mm^3/str
-Fuel inject (post) (DA10F1);Fuel post;DA10F1;2218CD;((A*256)+B)/327.67;UN:72;100.0;0.0;mm^3/str
-Requested total fuel (DA10F1);Req. fuel;DA10F1;2218CE;((A*256)+B)/327.67;UN:72;100.0;0.0;mm^3/str
-Fuel inject (main) (DA10F1);Fuel main;DA10F1;2218CF;((A*256)+B)/327.67;UN:72;100.0;0.0;mm^3/str
-Total Injection (DA10F1);Total Injection;DA10F1;2218D0;((A*256)+B)/327.67;UN:72;100.0;0.0;mm^3/str
-Injection time (pilot) (DA10F1);Injection (pilot);DA10F1;2218D3;((A*256)+B)/1000;UN:44;0.5;0.0;ms
-Injection time (pre) (DA10F1);Injection (pre);DA10F1;2218D4;((A*256)+B)/1000;UN:44;1.0;0.0;ms
-Injection time (after) (DA10F1);Injection (after);DA10F1;2218D6;((A*256)+B)/1000;UN:44;1.0;0.0;ms
-Injection time (post) (DA10F1);Injection (post);DA10F1;2218D7;((A*256)+B)/1000;UN:44;1.0;0.0;ms
-Injection time (main) (DA10F1);Injection time (main);DA10F1;2218D8;((A*256)+B)/1000;UN:44;1.0;0.0;ms
-DNA (DA10F1);DNA;DA10F1;2218F0;(((((A*1000)+B)*1000)+C)*1000)+D;UN:0;65535.0;0.0; 
-Diesel temperature (DA10F1);Diesel;DA10F1;221900;(((A*256)+B)*0.02)-40;UN:15;60.0;0.0;°C
-Cruiser control speed (DA10F1);Speed target ;DA10F1;22192B;(((A*256)+B+1)/128)+2;UN:1;180.0;30.0;km/h
-A/C pressure (DA10F1);A/C;DA10F1;22192F;((A*256)+B)/100;UN:48;15.0;0.0;bar
-Air temp (turbo) (DA10F1);Turbo temp;DA10F1;221936;((A*256)+B)/10000;UN:10;5.0;0.0;V
-Overboost valve (DA10F1);Overboost valve;DA10F1;22193A;(((SIGNED(A)*256)+B))/100;UN:0;180.0;-180.0; 
-Air mass measured (DA10F1);Air;DA10F1;22193C;((A*256)+B)/3;UN:56;1500.0;0.0;mg/c
-Air mass req. (DA10F1);Air req;DA10F1;22193D;((A*256)+B)/3;UN:56;1500.0;0.0;mg/c
-Diesel pressure req.;Diesel req.;DA10F1;221946;((A*256)+B)/10;UN:48;4000.0;0.0;bar
-Diesel pressure measured (DA10F1);Diesel;DA10F1;221947;((A*256)+B)/10;UN:48;4000.0;0.0;bar
-Oil pressure status (DA10F1);Oil pressure ok;DA10F1;22194D;A;UN:0;4.0;0.0; 
-Oil level (DA10F1);Oil level;DA10F1;22194E;((A*256)+B)/10;UN:36;70.0;50.0;mm
-Air pressure (DA10F1);Air;DA10F1;221956;((A*256+B)-32768);UN:52;65535.0;0.0;mbar
-Boost pressure required (DA10F1);Boost req.;DA10F1;221959;((A*256+B)-32768)/1000-1;UN:48;2.0;0.0;bar
-Boost pressure sensor (DA10F1);Boost;DA10F1;22195B;((A*256)+B)/10000;UN:10;5.0;0.0;V
-Odometer (DA10F1);Odometer;DA10F1;222001;((((A*256)+B)*256)+C)/10;UN:3;400000.0;0.0;km
-Odometer last programming (DA10F1);Last program.;DA10F1;222002;((((A*256)+B)*256)+C)/10;UN:3;500000.0;0.0;km
-Number of programmers (DA10F1);Progr.;DA10F1;222003;A;UN:0;256.0;0.0; 
-Out of range rpm time (DA10F1);Over rpm time;DA10F1;222006;((A*1000)+B)/100;UN:17;655.0;0.0;sec.
-Fuel correction cyl 1 (DA10F1);Fuel cyl 1;DA10F1;223800;(SIGNED((A*256)+B))/100;UN:72;2.0;-2.0;mm^3/str
-Fuel correction cyl 2 (DA10F1);Fuel cyl 2;DA10F1;223801;(SIGNED((A*256)+B))/100;UN:72;2.0;-2.0;mm^3/str
-Fuel correction cyl 3 (DA10F1);Fuel cyl 3;DA10F1;223802;(SIGNED((A*256)+B))/100;UN:72;2.0;-2.0;mm^3/str
-Fuel correction cyl 4 (DA10F1);Fuel cyl 4;DA10F1;223803;(SIGNED((A*256)+B))/100;UN:72;2.0;-2.0;mm^3/str
-Distance covered from last DPF regeneration (DA10F1);DPF;DA10F1;223923;((((A*256)+B)*256)+C)/10;UN:3;250.0;0.0;km
-Distance covered from last DPF regeneration (DA10F1);DPF;DA10F1;223924;((((A*256)+B)*256)+C)/10;UN:3;250.0;0.0;km
-? Cycle (DA10F1);Cycle;DA10F1;22392B;((A*256)+B)/655.35;UN:14;100.0;0.0;%
-? Cycles (DA10F1);Cycles;DA10F1;22392C;((A*256)+B);UN:0;65535.0;0.0; 
-Pressure F-L (DAC7F1);🛞F-L;DAC7F1;2240B1;((A*256)+B)/1000;UN:48;4.0;1.0;bar
-Pressure F-R (DAC7F1);🛞F-R;DAC7F1;2240B2;((A*256)+B)/1000;UN:48;4.0;1.0;bar
-Pressure R-L (DAC7F1);🛞R-L;DAC7F1;2240B3;((A*256)+B)/1000;UN:48;4.0;1.0;bar
-Pressure R-R (DAC7F1);🛞R-R;DAC7F1;2240B4;((A*256)+B)/1000;UN:48;4.0;1.0;bar
-Turbo boost pressure (DB33F1);Turbo;DB33F1;010B;(A-100)/100;UN:48;2.0;0.0;bar
-Oil variable pump position (DA10F1);Oil press;DA10F1;22194F;A;UN:0;7.0;1.0; 
-Out of range rpm (DA10F1);Over rpm;DA10F1;222004;A;UN:0;256.0;0.0; 
-Maximum rpm (DA10F1);Max rpm;DA10F1;222005;A;UN:6;255.0;0.0;rpm
-Fuel consumption (DA10F1);Fuel cons;DA10F1;221942;((A*256)+B)/2533;UN:12;26.0;0.0;L/h
-Air temp (debimeter) (DA10F1);Debimeter;DA10F1;22193F;((A*256)+B)*0.02-40;UN:15;60.0;20.0;°C
-Aperture EGR (DA10F1);EGR;DA10F1;22189A;A*100/256/2;UN:14;40.0;0.0;%
-Battery Voltage (DA40F1);Battery;DA40F1;221004;A/10;UN:10;15.0;12.0;V
-Battery Current IBS (DA40F1);Battery;DA40F1;221005;(((L*256)+M)-(256*128))/100;UN:59;30.0;-30.0;A
-Battery Voltage IBS (DA40F1);Battery ?;DA40F1;221005;((J*256)+K)/800;UN:10;15.0;12.0;V
-Battery Temperature IBS (DA40F1);Battery;DA40F1;221005;G-40;UN:15;100.0;-40.0;°C
-SoC IBS (DA40F1);Battery SoC;DA40F1;221005;B;UN:14;95.0;65.0;%
-Key Ignition Position (DA40F1);Key Ignition Position;DA40F1;220131;A;UN:0;14.0;0.0; 
-Oil pressure (BACCABLE);Oil press;DABAF1;2200000004B2;((((B*256)+C)@&510)@>>1)/10;UN:48;6.0;1.0;bar
-Oil temperature (BACCABLE);Oil temp;DABAF1;2202000004B2;((((B*256)+C)@&16320)@>>6)-40;UN:15;120.0;70.0;°C
-Forced Regeneration State (DA10F1);Forced Reg;DA10F1;2218EC;A;UN:0;10.0;0.0; 
-Engine rpm (BACCABLE);Motor;DABAF1;2200000000FC;((((B*256)+C)@&65534)@>>2);UN:6;5000.0;0.0;rpm
-Actual gear (BACCABLE);Gear;DABAF1;2200000002EF;(((B)@&240)@>>4);UN:0;10.0;0.0; 
-DPF Regeneration (BACCABLE);DPF reg.;DABAF1;2200000002EF;(((C)@&128)@>>7);UN:0;1.0;0.0; 
-Boost pressure (BACCABLE);Turbo;DABAF1;2203000002EF;((((B*256)+C)@&32640)@>>7)/100*1.5;UN:48;2.0;0.0;bar
-? Engine water temperature (BACCABLE);H2O temp;DABAF1;2200000000ED;B-40;UN:0;120.0;70.0; 
-? Fuel consumption (BACCABLE);consumption;DABAF1;2203000000ED;((((((B*256)+C)*256)+D)@&1048568)@>>3);UN:50;100.0;0.0;km/L
-Gas position (BACCABLE);Accelerator;DABAF1;2202000000FC;((((B*256)+C)@&8160)@>>5)/255*100;UN:14;100.0;0.0;%
-Pedal position (BACCABLE);Pedal ;DABAF1;2200000001F0;((((B*256)+C)@&8160)@>>5)*100/255;UN:14;100.0;0.0;%
-Wather on diesel filter (DA10F1);H2O diesel;DA10F1;2218FF;A;UN:0;100.0;0.0; 
-Heater spark plugs command (diesel) (DA10F1);Spark cmd;DA10F1;22190B;((A*256)+B)*100/65535;UN:14;100.0;0.0;%
-DPF post temperature (DA10F1);DPF temp post;DA10F1;223915;(((A*256)+B)*0.02)-40;UN:15;700.0;400.0;°C
-DPF differential press (DA10F1);DPF dP;DA10F1;2218E2;B;UN:52;256.0;0.0;mbar
-DPF regeneration mean temperature (DA10F1);DPF mean temp;DA10F1;223808;(((A*256)+B)/50)-40;UN:15;700.0;600.0;°C
-DPF interrupted regeneration (DA10F1);DPF reg int;DA10F1;2218A5;A;UN:0;256.0;0.0; 
-Last oil change (DA10F1);Oil chang;DA10F1;22380E;((((A*256)+B)*256)+C)/10;UN:3;1000000.0;0.0;km
-Steering angle (DA2AF1);Steering;DA2AF1;22083C;((((SIGNED(A)*256)+B))/16);UN:7;360.0;-360.0;°
+﻿Long description;Short description;Header;Command ID (PID);Formula;Measure unit;Max value;Min value
+DPF clogging (DA10F1);DPF;DA10F1;2218E4;((A*256)+B)*1000/65535;%;100.0;0.0
+Battery IBS (DA10F1);Battery;DA10F1;2219BD;A;%;100.0;0.0
+Oil quality degrade (DA10F1);Oil quality;DA10F1;223813;((A*256)+B)*100/65535;%;100.0;0.0
+Air temp (turbo) (DA10F1);Turbo;DA10F1;221935;(((A*256)+B)*0.02)-40;°C;80.0;20.0
+Engine oil temperature (benz) (DA10F1);Oil;DA10F1;221302;B;°C;200.0;-40.0
+Intake manifold temperature IMT (before the intercooler) (DA10F1);Intercooler;DA10F1;223A58;A-40;°C;200.0;-40.0
+Intake air temperature IAT (after the intercooler) (DA10F1);Intake air;DA10F1;221935;A-40;°C;200.0;-40.0
+Torque(from TCM) (DA18F1);Torque;DA18F1;221018;((A*256+B)-500);Nm;500.0;0.0
+Gearbox oil temperature;AT8;DA18F1;2204FE;A-40;°C;120.0;50.0
+Engine oil level (benz) (DA10F1);Oil;DA10F1;223A41;(A*256+B)/1000;L;5.0;0.0
+Current engaged gear (DA10F1);AT8;DA10F1;22192D;A; ;8.0;0.0
+Boost pressure (DA10F1);Turbo;DA10F1;22195A;((A*256+B)-32768)/1000-1;bar;2.0;0.0
+DPF temperature (DA10F1);DPF;DA10F1;2218DE;(((A*256)+B)*0.02)-40;°C;700.0;400.0
+DPF regeneration process (DA10F1);Regen.;DA10F1;22380B;((A*256)+B)*(100/65535);%;100.0;0.0
+Distance covered from last DPF regeneration (DA10F1);DPF;DA10F1;223807;((A*65536)+(B*256)+C)*0.1;km;300.0;0.0
+Total DPF regenerations (DA10F1);Regen.;DA10F1;2218A4;(A*256)+B; ;65000.0;0.0
+Engine coolant temperature (DA10F1);H2O trmp;DA10F1;221003;(((A*256)+B)*0.02)-40;°C;120.0;70.0
+DNA selector (DA10F1);DNA;DA10F1;2218F0;A; ;6.0;0.0
+Battery voltage (DB33F1);Battery;DB33F1;0142;((A*256)+B)/1000;V;15.0;12.0
+Engine RPM (DB33F1);;DB33F1;010C;(((256*A)+B)/4);rpm;6000.0;0.0
+Tire temperature front left (DAC7F1);🛞 F-L;DAC7F1;2240B1;E-50;°C;200.0;-50.0
+Tire temperature front right (DAC7F1);🛞 F-R;DAC7F1;2240B2;E-50;°C;200.0;-50.0
+Tire temperature rear left (DAC7F1);🛞 R-L;DAC7F1;2240B3;E-50;°C;200.0;-50.0
+Tire temperature rear right (DAC7F1);🛞 R-R;DAC7F1;2240B4;E-50;°C;200.0;-50.0
+Engine oil pressure (benz) (DA10F1);Oil;DA10F1;22130A;A*10/255;bar;10.0;0.0
+Vehicle Speed (DB33F1);Speed;DB33F1;010D;A;km/h;250.0;0.0
+Fuel Pressure (DB33F1);Diesel;DB33F1;0123;((A*256)+B)*10;kPa;180000.0;0.0
+Commanded EGR (DB33F1);EGR;DB33F1;012C;A*100/255;%;100.0;0.0
+Number of warm-ups since codes cleared (DB33F1);Warmup without DTC;DB33F1;0130;A; ;256.0;0.0
+Distance since codes cleared (DB33F1);DTC cleared;DB33F1;0131;(A*256)+B; ;65530.0;0.0
+Turbocharger temperature (DB33F1);Turbo;DB33F1;0175;(((F*256)+G)/10)-40;°C;800.0;200.0
+Battery voltage (DA10F1);Battery;DA10F1;221955;((A*256)+B)*(0.5/1000);V;15.0;12.0
+Calculated horsepower (DA18F1);Power;DA18F1;221018;((A*256+B)-500)* {Giri motore} /9549*1.36;hp;200.0;0.0
+DNA (DA18F1);DNA;DA18F1;220518;A; ;100.0;0.0
+DNA (DA18F1);DNA;DA18F1;220540;C; ;100.0;0.0
+Motor rpm (DA10F1);Motor rev;DA10F1;221000;((A*256)+B)/4;rpm;5000.0;0.0
+Speed (DA10F1);Speed;DA10F1;221002;((A*256)+B)/124;km/h;260.0;0.0
+Time from start;T-ON;DA10F1;221009;((A*256)+B)/4;min;655354.0;0.0
+EGR commanded (DA10F1);EGR;DA10F1;22189B;(((A*256)+B)-32767)*100/32767;%;60.0;0.0
+EGR measured (DA10F1);EGR;DA10F1;22189C;(((A*256)+B)-32767)*100/32767;%;60.0;0.0
+Total DPF regenerations (DA10F1);Regen.;DA10F1;2218A4;(A*256)+B; ;65000.0;0.0
+Particolate (DA10F1);Particolate;DA10F1;2218AA;((A*256)+B);g;400.0;0.0
+Throttle 1 (DA10F1);Throttle;DA10F1;221924;((A*256)+B)/655.35;%;100.0;0.0
+Throttle 2 (DA10F1);Throttle;DA10F1;221925;((A*256)+B)/655.35;%;100.0;0.0
+Cruiser control (DA10F1);Cruiser ;DA10F1;22192A;(A*256)+B; ;17.0;0.0
+Boost pressure required (DA10F1);Turbo req.;DA10F1;221942;((A*256+B)/32768);bar;2.0;0.0
+Cruiser control (DA10F1);Cruiser ;DA10F1;221961;(A*256)+B; ;2.0;1.0
+Distance from DPF replacement (DA10F1);DPF total distance;DA10F1;223806;((A*256)+B)*10;km;655350.0;0.0
+DPF regeneration mean distance (DA10F1);Reg. interv;DA10F1;223809;(A*256)+B;km;400.0;0.0
+DPF regeneration mean time (DA10F1);Reg. time;DA10F1;22380A;((A*256)+B)/60;min;10.0;0.0
+Cruiser control regulation (DA10F1);Cruiser;DA10F1;223975;(A*256)+B; ;2048.0;0.0
+Diesel rail (DA10F1);Rail;DA10F1;221904;((A*256)+B);kPa;65535.0;0.0
+Throttle 3 (DA10F1);Throttle ;DA10F1;221926;((A*256)+B)*100/24576;%;85.0;20.0
+Odometer (DA10F1);Odometer;DA10F1;223814;((((((A*256)+B)*256)+C)*256)+D)/1000;km;500000.0;0.0
+? Time style (DA10F1);Time;DA10F1;223888;(((((((L*256)+ M*256)+N)*256)+O)*256)+P)/100/60;min;30.0;0.0
+Turbo position req (DA10F1);Turbo pos;DA10F1;22189F;((A*256)+B)/655.35;%;100.0;0.0
+Turbo position measured (DA10F1);Turbo pos;DA10F1;2218A0;((A*256)+B)/655.35;%;100.0;0.0
+Injection advance (pilot) (DA10F1);Advance pilot;DA10F1;2218C1;((A*256)+B)*16/1000;°;20.0;0.0
+Injection advance (pre) (DA10F1);Advance pre;DA10F1;2218C2;((A*256)+B)*16/1000;°;20.0;0.0
+Injection advance (after) (DA10F1);Advance after;DA10F1;2218C4;((A*256)+B)*16/1000;°;20.0;0.0
+Injection advance (post) (DA10F1);Advance post;DA10F1;2218C5;((A*256)+B)*16/1000;°;20.0;0.0
+Injection advance (main) (DA10F1);Advance main;DA10F1;2218C6;((A*256)+B)*16/1000;°;20.0;0.0
+Fuel inject (pilot) (DA10F1);Fuel pilot;DA10F1;2218C9;((A*256)+B)/327.67;mm^3/str;3.0;0.0
+Fuel inject (pre) (DA10F1);Fuel pre;DA10F1;2218CA;((A*256)+B)/327.67;mm^3/str;100.0;0.0
+Fiel inject (after) (DA10F1);Fuel after;DA10F1;2218CC;((A*256)+B)/327.67;mm^3/str;100.0;0.0
+Fuel inject (post) (DA10F1);Fuel post;DA10F1;2218CD;((A*256)+B)/327.67;mm^3/str;100.0;0.0
+Requested total fuel (DA10F1);Req. fuel;DA10F1;2218CE;((A*256)+B)/327.67;mm^3/str;100.0;0.0
+Fuel inject (main) (DA10F1);Fuel main;DA10F1;2218CF;((A*256)+B)/327.67;mm^3/str;100.0;0.0
+Total Injection (DA10F1);Total Injection;DA10F1;2218D0;((A*256)+B)/327.67;mm^3/str;100.0;0.0
+Injection time (pilot) (DA10F1);Injection (pilot);DA10F1;2218D3;((A*256)+B)/1000;ms;0.5;0.0
+Injection time (pre) (DA10F1);Injection (pre);DA10F1;2218D4;((A*256)+B)/1000;ms;1.0;0.0
+Injection time (after) (DA10F1);Injection (after);DA10F1;2218D6;((A*256)+B)/1000;ms;1.0;0.0
+Injection time (post) (DA10F1);Injection (post);DA10F1;2218D7;((A*256)+B)/1000;ms;1.0;0.0
+Injection time (main) (DA10F1);Injection time (main);DA10F1;2218D8;((A*256)+B)/1000;ms;1.0;0.0
+DNA (DA10F1);DNA;DA10F1;2218F0;(((((A*1000)+B)*1000)+C)*1000)+D; ;65535.0;0.0
+Diesel temperature (DA10F1);Diesel;DA10F1;221900;(((A*256)+B)*0.02)-40;°C;60.0;0.0
+Cruiser control speed (DA10F1);Speed target ;DA10F1;22192B;(((A*256)+B+1)/128)+2;km/h;180.0;30.0
+A/C pressure (DA10F1);A/C;DA10F1;22192F;((A*256)+B)/100;bar;15.0;0.0
+Air temp (turbo) (DA10F1);Turbo temp;DA10F1;221936;((A*256)+B)/10000;V;5.0;0.0
+Overboost valve (DA10F1);Overboost valve;DA10F1;22193A;(((SIGNED(A)*256)+B))/100; ;180.0;-180.0
+Air mass measured (DA10F1);Air;DA10F1;22193C;((A*256)+B)/3;mg/c;1500.0;0.0
+Air mass req. (DA10F1);Air req;DA10F1;22193D;((A*256)+B)/3;mg/c;1500.0;0.0
+Diesel pressure req.;Diesel req.;DA10F1;221946;((A*256)+B)/10;bar;4000.0;0.0
+Diesel pressure measured (DA10F1);Diesel;DA10F1;221947;((A*256)+B)/10;bar;4000.0;0.0
+Oil pressure status (DA10F1);Oil pressure ok;DA10F1;22194D;A; ;4.0;0.0
+Oil level (DA10F1);Oil level;DA10F1;22194E;((A*256)+B)/10;mm;70.0;50.0
+Air pressure (DA10F1);Air;DA10F1;221956;((A*256+B)-32768);mbar;65535.0;0.0
+Boost pressure required (DA10F1);Boost req.;DA10F1;221959;((A*256+B)-32768)/1000-1;bar;2.0;0.0
+Boost pressure sensor (DA10F1);Boost;DA10F1;22195B;((A*256)+B)/10000;V;5.0;0.0
+Odometer (DA10F1);Odometer;DA10F1;222001;((((A*256)+B)*256)+C)/10;km;400000.0;0.0
+Odometer last programming (DA10F1);Last program.;DA10F1;222002;((((A*256)+B)*256)+C)/10;km;500000.0;0.0
+Number of programmers (DA10F1);Progr.;DA10F1;222003;A; ;256.0;0.0
+Out of range rpm time (DA10F1);Over rpm time;DA10F1;222006;((A*1000)+B)/100;sec.;655.0;0.0
+Fuel correction cyl 1 (DA10F1);Fuel cyl 1;DA10F1;223800;(SIGNED((A*256)+B))/100;mm^3/str;2.0;-2.0
+Fuel correction cyl 2 (DA10F1);Fuel cyl 2;DA10F1;223801;(SIGNED((A*256)+B))/100;mm^3/str;2.0;-2.0
+Fuel correction cyl 3 (DA10F1);Fuel cyl 3;DA10F1;223802;(SIGNED((A*256)+B))/100;mm^3/str;2.0;-2.0
+Fuel correction cyl 4 (DA10F1);Fuel cyl 4;DA10F1;223803;(SIGNED((A*256)+B))/100;mm^3/str;2.0;-2.0
+Distance covered from last DPF regeneration (DA10F1);DPF;DA10F1;223923;((((A*256)+B)*256)+C)/10;km;250.0;0.0
+Distance covered from last DPF regeneration (DA10F1);DPF;DA10F1;223924;((((A*256)+B)*256)+C)/10;km;250.0;0.0
+? Cycle (DA10F1);Cycle;DA10F1;22392B;((A*256)+B)/655.35;%;100.0;0.0
+? Cycles (DA10F1);Cycles;DA10F1;22392C;((A*256)+B); ;65535.0;0.0
+Pressure F-L (DAC7F1);🛞F-L;DAC7F1;2240B1;((A*256)+B)/1000;bar;4.0;1.0
+Pressure F-R (DAC7F1);🛞F-R;DAC7F1;2240B2;((A*256)+B)/1000;bar;4.0;1.0
+Pressure R-L (DAC7F1);🛞R-L;DAC7F1;2240B3;((A*256)+B)/1000;bar;4.0;1.0
+Pressure R-R (DAC7F1);🛞R-R;DAC7F1;2240B4;((A*256)+B)/1000;bar;4.0;1.0
+Turbo boost pressure (DB33F1);Turbo;DB33F1;010B;(A-100)/100;bar;2.0;0.0
+Oil variable pump position (DA10F1);Oil press;DA10F1;22194F;A; ;7.0;1.0
+Out of range rpm (DA10F1);Over rpm;DA10F1;222004;A; ;256.0;0.0
+Maximum rpm (DA10F1);Max rpm;DA10F1;222005;A;rpm;255.0;0.0
+Fuel consumption (DA10F1);Fuel cons;DA10F1;221942;((A*256)+B)/2533;L/h;26.0;0.0
+Air temp (debimeter) (DA10F1);Debimeter;DA10F1;22193F;((A*256)+B)*0.02-40;°C;60.0;20.0
+Aperture EGR (DA10F1);EGR;DA10F1;22189A;A*100/256/2;%;40.0;0.0
+Battery Voltage (DA40F1);Battery;DA40F1;221004;A/10;V;15.0;12.0
+Battery Current IBS (DA40F1);Battery;DA40F1;221005;(((L*256)+M)-(256*128))/100;A;30.0;-30.0
+Battery Voltage IBS (DA40F1);Battery;DA40F1;221005;((J*256)+K)/800;V;15.0;12.0
+Battery Temperature IBS (DA40F1);Battery;DA40F1;221005;G-40;°C;100.0;-40.0
+SoC IBS (DA40F1);Battery SoC;DA40F1;221005;B;%;95.0;65.0
+Key Ignition Position (DA40F1);Key Ignition Position;DA40F1;220131;A;;14.0;0.0
+Oil pressure (BACCABLE);Oil press;DABAF1;2200000004B2;((((B*256)+C)@&510)@>>1)/10;bar;6.0;1.0
+Oil temperature (BACCABLE);Oil temp;DABAF1;2202000004B2;((((B*256)+C)@&16320)@>>6)-40;°C;120.0;70.0
+Forced Regeneration State (DA10F1);Forced Reg;DA10F1;2218EC;A; ;10.0;0.0
+Engine rpm (BACCABLE);Motor;DABAF1;2200000000FC;((((B*256)+C)@&65534)@>>2);;5000.0;0.0
+Actual gear (BACCABLE);Gear;DABAF1;2200000002EF;(((B)@&240)@>>4); ;10.0;0.0
+DPF Regeneration (BACCABLE);DPF reg.;DABAF1;2200000002EF;(((C)@&128)@>>7); ;1.0;0.0
+Boost pressure (BACCABLE);Turbo;DABAF1;2203000002EF;((((B*256)+C)@&32640)@>>7)/100*1.5;bar;2.0;0.0
+? Engine water temperature (BACCABLE);H2O temp;DABAF1;2200000000ED;B-40;;120.0;70.0
+? Fuel consumption (BACCABLE);consumption;DABAF1;2203000000ED;((((((B*256)+C)*256)+D)@&1048568)@>>3);km/L;100.0;0.0
+Gas position (BACCABLE);Accelerator;DABAF1;2202000000FC;((((B*256)+C)@&8160)@>>5)/255*100;%;100.0;0.0
+Pedal position (BACCABLE);Pedal ;DABAF1;2200000001F0;((((B*256)+C)@&8160)@>>5)*100/255;%;100.0;0.0
+Wather on diesel filter (DA10F1);H2O diesel;DA10F1;2218FF;A;;100.0;0.0
+Heater spark plugs command (diesel) (DA10F1);Spark cmd;DA10F1;22190B;((A*256)+B)*100/65535;%;100.0;0.0
+DPF post temperature (DA10F1);DPF temp post;DA10F1;223915;(((A*256)+B)*0.02)-40;°C;700.0;400.0
+DPF differential press (DA10F1);DPF dP;DA10F1;2218E2;B;mbar;256.0;0.0
+DPF regeneration mean temperature (DA10F1);DPF mean temp;DA10F1;223808;(((A*256)+B)/50)-40;;700.0;600.0
+DPF interrupted regeneration (DA10F1);DPF reg int;DA10F1;2218A5;A; ;256.0;0.0
+Last oil change (DA10F1);Oil change;DA10F1;22380E;((((A*256)+B)*256)+C)/10;km;1000000.0;0.0
+Steering angle (DA2AF1);Steering;DA2AF1;22083C;((((SIGNED(A)*256)+B))/16);°;360.0;-360.0
+Temperature ETG (benz);ETG;DA10F1;2218BA;(A*5)-50;;1000.0;200.0
+Temperature input turbo (exaust) (DA10F1);ETG;DA10F1;223836;(((A*256)+B)/50)-40;°C;700.0;200.0
