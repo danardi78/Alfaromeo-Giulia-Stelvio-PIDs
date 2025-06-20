@@ -7,7 +7,7 @@ Engine oil temperature (benz) (DA10F1);Oil;DA10F1;221302;B;°C;200.0;-40.0
 Intake manifold temperature IMT (before the intercooler) (DA10F1);Intercooler;DA10F1;223A58;A-40;°C;200.0;-40.0
 Intake air temperature IAT (after the intercooler) (DA10F1);Intake air;DA10F1;221935;A-40;°C;200.0;-40.0
 Torque(from TCM) (DA18F1);Torque;DA18F1;221018;((A*256+B)-500);Nm;500.0;0.0
-Gearbox oil temperature;AT8;DA18F1;2204FE;A-40;°C;120.0;50.0
+Gearbox oil temperature (DA18F1);AT8;DA18F1;2204FE;A-40;°C;120.0;50.0
 Engine oil level (benz) (DA10F1);Oil;DA10F1;223A41;(A*256+B)/1000;L;5.0;0.0
 Current engaged gear (DA10F1);AT8;DA10F1;22192D;A; ;8.0;0.0
 Boost pressure (DA10F1);Turbo;DA10F1;22195A;((A*256+B)-32768)/1000-1;bar;2.0;0.0
@@ -36,7 +36,7 @@ DNA (DA18F1);DNA;DA18F1;220518;A; ;100.0;0.0
 DNA (DA18F1);DNA;DA18F1;220540;C; ;100.0;0.0
 Motor rpm (DA10F1);Motor rev;DA10F1;221000;((A*256)+B)/4;rpm;5000.0;0.0
 Speed (DA10F1);Speed;DA10F1;221002;((A*256)+B)/124;km/h;260.0;0.0
-Time from start;T-ON;DA10F1;221009;((A*256)+B)/4;min;655354.0;0.0
+Time from start (DA10F1);T-ON;DA10F1;221009;((A*256)+B)/4;min;655354.0;0.0
 EGR commanded (DA10F1);EGR;DA10F1;22189B;(((A*256)+B)-32767)*100/32767;%;60.0;0.0
 EGR measured (DA10F1);EGR;DA10F1;22189C;(((A*256)+B)-32767)*100/32767;%;60.0;0.0
 Total DPF regenerations (DA10F1);Regen.;DA10F1;2218A4;(A*256)+B; ;65000.0;0.0
@@ -81,8 +81,8 @@ Air temp (turbo) (DA10F1);Turbo temp;DA10F1;221936;((A*256)+B)/10000;V;5.0;0.0
 Overboost valve (DA10F1);Overboost valve;DA10F1;22193A;(((SIGNED(A)*256)+B))/100; ;180.0;-180.0
 Air mass measured (DA10F1);Air;DA10F1;22193C;((A*256)+B)/3;mg/c;1500.0;0.0
 Air mass req. (DA10F1);Air req;DA10F1;22193D;((A*256)+B)/3;mg/c;1500.0;0.0
-Diesel pressure req.;Diesel req.;DA10F1;221946;((A*256)+B)/10;bar;4000.0;0.0
-Diesel pressure measured (DA10F1);Diesel;DA10F1;221947;((A*256)+B)/10;bar;4000.0;0.0
+Diesel pressure req. (DA10F1);Diesel req.;DA10F1;221946;((A*256)+B)/20;bar;2200.0;200.0
+Diesel pressure measured (DA10F1);Diesel;DA10F1;221947;((A*256)+B)/20;bar;2200.0;200.0
 Oil pressure status (DA10F1);Oil pressure ok;DA10F1;22194D;A; ;4.0;0.0
 Oil level (DA10F1);Oil level;DA10F1;22194E;((A*256)+B)/10;mm;70.0;50.0
 Air pressure (DA10F1);Air;DA10F1;221956;((A*256+B)-32768);mbar;65535.0;0.0
