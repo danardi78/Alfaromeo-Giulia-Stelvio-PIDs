@@ -19,7 +19,7 @@ It come out from my phone, and I had edited just to erease my working parameters
 It's a human readable version of same datas as before. Just imported on a sheet, and cleaned from unuseful information.<br>
 You can use that to import in your app or application, I'll try to have the same format in each upgrade.<br>
 The columns of the sheet are:
-1. Long description: any question? :)
+1. Long description: any question? :) (long description that starts with "?" are PIDs that I can't verify in my car, any advice is welcome)
 2. Short description: it's the label attached on sensors on dashboard of the app, you probably don't need about this
 3. Header: in short words it select the ecu you want to use for the request. The app have to send it before the command ID
 4. Command ID (PID): it's the code of the parameter you are requesting
