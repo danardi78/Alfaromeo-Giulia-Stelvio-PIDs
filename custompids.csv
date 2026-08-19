@@ -51,7 +51,7 @@ DPF regeneration mean time (DA10F1);Reg. time;DA10F1;22380A;((A*256)+B)/60;min;1
 Cruiser control regulation (DA10F1);Cruiser;DA10F1;223975;(A*256)+B; ;2048.0;0.0
 Diesel rail (DA10F1);Rail;DA10F1;221904;((A*256)+B);kPa;65535.0;0.0
 Throttle 3 (DA10F1);Throttle ;DA10F1;221926;((A*256)+B)*100/24576;%;85.0;20.0
-Odometer (DA10F1);Odometer;DA10F1;223814;((((((A*256)+B)*256)+C)*256)+D)/1000;km;500000.0;0.0
+Odometer (DA10F1 3814);Odometer;DA10F1;223814;((((((A*256)+B)*256)+C)*256)+D)/1000;km;500000.0;0.0
 ? Time style (DA10F1);Time;DA10F1;223888;(((((((L*256)+ M*256)+N)*256)+O)*256)+P)/100/60;min;30.0;0.0
 Turbo position req (DA10F1);Turbo pos req;DA10F1;22189F;((A*256)+B)/655.35;%;100.0;0.0
 Turbo position measured (DA10F1);Turbo pos;DA10F1;2218A0;((A*256)+B)/655.35;%;100.0;0.0
@@ -87,7 +87,7 @@ Oil level (DA10F1);Oil level;DA10F1;22194E;((A*256)+B)/10;mm;70.0;50.0
 Air pressure (DA10F1);Air;DA10F1;221956;((A*256+B)-32768);mbar;65535.0;0.0
 Boost pressure required (DA10F1);Turbo req.;DA10F1;221959;((A*256+B)-32768)/1000-1;bar;2.0;0.0
 Boost pressure sensor (DA10F1);Boost;DA10F1;22195B;((A*256)+B)/10000;V;5.0;0.0
-Odometer (DA10F1);Odometer;DA10F1;222001;((((A*256)+B)*256)+C)/10;km;400000.0;0.0
+Odometer (DA10F1 2001);Odometer;DA10F1;222001;((((A*256)+B)*256)+C)/10;km;400000.0;0.0
 Odometer last programming (DA10F1);Last program.;DA10F1;222002;((((A*256)+B)*256)+C)/10;km;500000.0;0.0
 Number of programmers (DA10F1);Progr.;DA10F1;222003;A; ;256.0;0.0
 Out of range rpm time (DA10F1);Over rpm time;DA10F1;222006;((A*1000)+B)/100;sec.;655.0;0.0
@@ -175,3 +175,4 @@ Time in engine running with low oil pressure (DA10F1);Time in low press;DA10F1;2
 ? DPF flow resistance (DA10F1);DPF flow;DA10F1;2218A3;(A*256)+B-32761; ;1500.0;0.0
 Fuel tank (DA10F1);Fuel;DA10F1;221001;A*53/255;L;53.0;0.0
 Oil change counter (manual reset) (DA10F1);nr. Oil cng;DA10F1;22380D;A; ;100.0;0.0
+Distance from last oil change (DA10F1);Oil change;DA10F1;22380E;{Odometer (DA10F1 2001)}-((((A*256)+B)*256)+C)/10;km;10000.0;0.0
